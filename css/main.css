@@ -1,0 +1,70 @@
+/*共用*/
+.comWidth{
+    width: 1000px;
+    margin:0 auto;
+}
+.leftArea{
+    float: left;
+}
+.rightArea{
+    float: right;
+}
+/*topBar*/
+.topBar {
+    height: 31px;
+    background: #f7f7f7;
+    line-height: 31px;
+}
+.collection{
+    background: url("") left center no-repeat;
+    padding-left: 19px;
+    font-weight: bold;
+}
+.topBar a:hover{
+    color: red;
+}
+/*logo*/
+.logoBar{
+    height: 85px;
+    background-color: #1d7ad9;
+}
+.logo{
+    padding-left: 41px;
+    padding-top: 19px;
+}
+/*search*/
+.search-box{
+    width:430px;
+    padding-top: 23px;
+    padding-left: 185px;
+}
+.search-text{
+    width: 350px;
+    height: 35px;
+    padding: 0 5px;
+}
+.search-btn{
+    width: 70px;
+    height: 35px;
+    font-size: 14px;
+    background-color: #ff8c00;
+    color:white;
+}
+/*购物车*/
+.shopCar{
+    width: 145px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #ff8c00;
+    margin-top: 23px;
+}
+.shopText{
+    font-size: 14px;
+    line-height: 35px;
+    color: #ffffff;
+    height: 100%;
+    width: 87px;
+    border-right:1px solid #e27a00;
+    background: url("../img/logo.png") 10px center no-repeat;
+    text-indent: 40px;
+}
