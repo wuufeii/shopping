@@ -1,0 +1,36 @@
+@font-face{
+    font-family: "icon";
+    src: url("../fonts/icomoon.eot"); /* IE9 ¼æÈÝÄ£Ê½ */
+    src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype")
+    ,url("../fonts/icomoon.woff") format("woff")
+    ,url("../fonts/icomoon.ttf") format("truetype")
+    ,url("../fonts/icomoon.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+.icon{
+    font-family: "icon";
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-star:before{
+    color:#f89406;
+    content: '\e9d9';
+}
+.icon-cart:before{
+    content: '\e93a';
+    padding: 10px;
+}
+.icon-menu:after{
+    content: '\e9bf';
+    padding-left: 5px;
+}
+.icon-menu1:before{
+    display: inline-block;
+    content: '\e9bf';
+}
+.icon-text:before{
+    content: '\e922';
+}
