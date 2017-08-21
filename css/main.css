@@ -157,6 +157,13 @@
     border: 1px solid transparent;
     border-radius: 8px;
 }
+.shopClass_item .aList{
+    display: inline-block;
+    border: 5px solid transparent;
+    border-left: 8px solid #ffffff;
+    float: right;
+    margin-top: 12px;
+}
 /*shopClass_item active 状态*/
 .shopClass_active{
     background-color: #ffffff;
@@ -380,4 +387,234 @@
 }
 .footer p{
     padding-bottom: 14px;
+}
+/*产品分类*/
+.products .leftArea{
+    width: 185px;
+    margin-left: -187px;
+}
+.products .rightArea{
+    width: 810px;
+}
+.products .banner_bar{
+    float: none;
+}
+/*产品分类导航*/
+.leftNav{
+    width: 100%;
+    background-color: #f3f3f3;
+    border: 1px solid #d7d7d7;
+    float: left;
+}
+.nav_title{
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    border-bottom:1px solid #d7d7d7;
+    text-align: center;
+}
+.nav_cont{
+    padding:0 18px 4px;
+    border-bottom: 1px dotted #d7d7d7;
+    margin-bottom: -1px;
+}
+.nav_cont h3{
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+
+}
+.navCont_list{
+    line-height: 25px;
+}
+.navCont_list li{
+    float: left;
+    width: 50%;
+}
+.vertical li{
+    width: 100%;
+    float: none;
+    padding-left: 10px;
+}
+.products_title{
+    height: 34px;
+    margin-top: 7px;
+    border-bottom: 1px solid #cccccc;
+}
+.products_title h3{
+    width: 185px;
+    height: 34px;
+    line-height: 34px;
+    border-bottom: 2px solid #096dba;
+    text-indent: 9px;
+}
+/*商品*/
+.item{
+    width: 25%;
+    float: left;
+    margin: 20px 0;
+}
+.img_item{
+    height: 170px;
+    text-align: center;
+}
+.img_item img{
+    height: 170px;
+}
+.item p{
+    line-height: 20px;
+    padding:0 15px;
+}
+.item a{
+    display: inline-block;
+    color: #000000;
+}
+.item a:hover{
+    text-decoration: underline;
+}
+.money{
+    color: #d4105a;
+    font-weight: bold;
+    padding-top: 10px;
+}
+/*筛选页*/
+.screening_box{
+    margin-top: 15px;
+}
+.screening{
+    border-bottom: 1px solid #cccccc;
+}
+.screening dt{
+    display: inline-block;
+    line-height: 32px;
+    width: 74px;
+    text-align: right;
+    margin-right: 42px;
+    float: left;
+}
+.screening a{
+    padding: 2px;
+}
+.limit{
+    display: inline-block;
+    width: 55px;
+    float: left;
+    line-height: 32px;
+}
+.screening .active{
+    background-color: #1d7ad9;
+    color: #ffffff;
+}
+.screening_list{
+    line-height: 32px;
+    width: 586px;
+    float: left;
+    -webkit-margin-start:0px;
+}
+.screening_list li{
+    width: 20%;
+    float: left;
+}
+.screen_more{
+    border: 1px solid #cccccc;
+    height: 23px;
+    line-height: 23px;
+    margin-top: 4px;
+    float: left;
+    -webkit-margin-start: 40px;
+}
+.screen_more p{
+    padding:0 14px;
+}
+.screen_more .more_pic{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: #1d7ad9;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.addInfo{
+    height: 31px;
+    border: 1px solid #cccccc;
+    background-color: #f5f5f5;
+}
+.address{
+    width: 100%;
+    float: left;
+}
+.address .add_text{
+    float: left;
+    line-height: 31px;
+    padding:0 12px 6px 0;
+}
+.addInfo .select{
+    margin-top: 4px;
+}
+.check{
+    position: relative;
+    top: -1px;
+}
+.screen_text{
+    line-height: 31px;
+    padding-right: 80px;
+}
+.screen_text span{
+    vertical-align: middle;
+}
+.check input, .check label{
+    vertical-align: middle;
+}
+.shop_number em{
+    color: #f00;
+    font-style: normal;
+    font-weight: bold;
+}
+.addCart{
+    border: 1px solid #999;
+    height: 22px;
+    display: inline-block;
+    padding: 0 8px;
+    margin: 8px 0;
+}
+.screening_list_more{
+    padding-left: 0.5%;
+}
+.screening_list_more .item{
+    width: 33.3%;
+}
+/*组件*/
+.select{
+    border: 1px solid #999;
+    height: 22px;
+    line-height: 22px;
+    float: left;
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-right: 20px;
+    position: relative;
+}
+.select h3{
+    font-size: 12px;
+    font-weight: normal;
+}
+.select span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 20px;
+}
+.show_select{
+    position: absolute;
+    left: -1px;
+    top: 22px;
+    background-color: #ffffff;
+    width: 100%;
+    border: 1px solid #999;
+    display: none;
+}
+.show_select li{
+    padding-left: 10px;
 }
