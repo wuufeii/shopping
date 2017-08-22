@@ -453,6 +453,7 @@
     width: 25%;
     float: left;
     margin: 20px 0;
+    position: relative;
 }
 .img_item{
     height: 170px;
@@ -474,8 +475,17 @@
 }
 .money{
     color: #d4105a;
+
     font-weight: bold;
     padding-top: 10px;
+}
+.hot{
+    width: 36px;
+    height: 56px;
+    background: url("../img/hot.png") no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 /*筛选页*/
 .screening_box{
@@ -584,6 +594,48 @@
 .screening_list_more .item{
     width: 33.3%;
 }
+
+/*page*/
+.page{
+    text-align: center;
+}
+.page a{
+    height: 24px;
+    display: inline-block;
+    line-height: 24px;
+    border: 1px solid #cccccc;
+    padding: 0 12px;
+    margin: 0 2px;
+}
+.page .omit{
+    display: inline-block;
+    padding: 0 12px;
+    margin: 0 2px;
+}
+.morePage{
+    padding-left: 14px;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+}
+.pageNum{
+    width: 29px;
+    padding: 0 3px;
+    border: 1px solid #cccccc;
+    height: 24px;
+    line-height: 24px\9;
+    margin-left: 4px;
+    margin-right:8px;
+}
+.page_btn{
+    width: 44px;
+    height: 24px;
+    line-height: 24px;
+    background-color: #e8e8e8;
+    border: 1px solid #cccccc;
+    margin-left: 6px;
+}
+
 /*组件*/
 .select{
     border: 1px solid #999;
@@ -617,4 +669,102 @@
 }
 .show_select li{
     padding-left: 10px;
+}
+
+/*商品介绍*/
+.grey{
+    background-color: #f0f0f0;
+}
+.userPosition{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.userPosition a{
+    font-size: 12px;
+    padding: 0 4px;
+}
+.userPosition a:hover{
+    text-decoration: underline;
+}
+.userPosition em{
+    font-style: normal;
+}
+.description_info{
+    background-color: #ffffff;
+}
+.description{
+    border: 1px solid #CCCCCC;
+
+}
+.description .leftArea{
+    width: 309px;
+}
+.description .rightArea{
+    width: 688px;
+    border-left: 1px solid #CCCCCC;
+}
+/*图片展示*/
+.description_img .big{
+    display: table-cell;
+    height: 340px;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.description_img .big img{
+    width: 309px;
+}
+.small{
+    padding-left: 1px;
+    width: 265px;
+    margin: 0 auto;
+}
+.small li{
+    float: left;
+    margin-left: -1px;
+}
+.small img{
+    width:62px;
+    height: 65px;
+    border: 1px solid #CCCCCC;
+}
+.small .active{
+    border-color: #317ee7;
+    position: relative;
+}
+.des_content{
+    padding: 10px;
+}
+.des_content h3{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+    padding: 13px 25px;
+}
+.des_content .dl{
+    margin-bottom: 8px;
+}
+.des_content .dt{
+    width: 75px;
+    float: left;
+    color: #666;
+    text-indent: 17px;
+    line-height: 25px;
+}
+.des_money{
+    font-size: 18px;
+    color: #f30;
+}
+.des_money i{
+    font-style: normal;
+    font-size: 12px;
+}
+.lowPrice{
+    display: inline-block;
+}
+.lowPrice img{
+    display: inline-block;
+    height:25px;
+    vertical-align: middle;
+    padding-right: 12px;
 }
