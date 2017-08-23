@@ -34,3 +34,13 @@
 .icon-text:before{
     content: '\e922';
 }
+.icon-more:before{
+    content: '\e900';
+    padding-left: 5px;
+}
+.icon-detail:before{
+    content: '\e904';
+}
+.icon-comment:before{
+    content: '\e970';
+}
