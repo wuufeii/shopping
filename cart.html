@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/fontFace.css"/>
+    <title>购物车</title>
+</head>
+<body>
+<div class="headBar">
+    <div class="topBar">
+        <div class="comWidth clear-fix">
+            <div class="leftArea">
+                <a href="#" class="collection icon icon-star">收藏慕课</a>
+            </div>
+            <div class="rightArea">
+                欢迎来到慕课网！<a href="#">[登录]</a> <a href="#">[免费注册]</a>
+            </div>
+        </div>
+    </div>
+    <div class="logoBar">
+        <div class="comWidth clear-fix">
+            <div class="logo cart_logo fl">
+                <a href="#"><img src="img/logo.png" alt="慕课网"/></a>
+                <p class="cart_title">购物车</p>
+            </div>
+            <div class="search-box fl">
+                <input type="text" class="search-text fl"/>
+                <input type="button" value="搜 索" class="search-btn fr"/>
+            </div>
+            <div class="shopCar cart_shopCart fr">
+                <span class="shopText icon icon-cart">购物车</span>
+                <span class="shopNum icon icon-menu">0</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cart_null comWidth clear-fix hide">
+    <span class="cart_img icon icon-cart"></span>
+    <div class="cart_null_text">
+        <p>购物车内暂时没有商品，登录后将显示你之前加的商品</p>
+        <a href="#" class="cart_null_btn">登录</a>
+        <a href="#" class="goingShopping">去购物&gt;</a>
+    </div>
+</div>
+<div class="cart_list comWidth hide">
+    <div class="cart_list_row comWidth">
+        <h3 class="list_title">慕课购物</h3>
+        <div class="list_col">
+            <p class="active">1.购物车</p>
+            <div class="line">
+                <p class="line1"></p>
+            </div>
+        </div>
+        <div class="list_col">
+            <p>2.填写核对订单信息</p>
+            <div class="line">
+                <p class="line2"></p>
+                <p class="line3"></p>
+            </div>
+        </div>
+        <div class="list_col">
+            <p>3.成功提交订单</p>
+        </div>
+
+    </div>
+    <div class="cart_list_title">
+        <p><a href="#" class="checkbox_h"><input type="checkbox"/>全选</a></p>
+        <p class="shop_title">商品</p>
+        <p class="shop_price">单价</p>
+        <p class="shop_number">数量</p>
+        <p class="shop_total">小计</p>
+        <p class="shop_operation">操作</p>
+    </div>
+    <div class="cart_list_content">
+        <p><input type="checkbox" class="checkbox_b"/></p>
+        <div class="shop_text">
+            <img src="img/phone-s1.jpg" alt="" class="shop_text_img"/>
+            <p class="shop_text_c">小米手机6是小米公司在2017年4月19日正式发布旗舰机，[1]  成为国内首款配备骁龙835处理器的手机。[2-3]  相关售价为：小米6+64GB版售价2499元，128GB版为2899元，陶瓷尊享版为2999元。</p>
+        </div>
+        <p>￥2899.00</p>
+        <div class="dl clear-fix">
+            <div class="dd clear-fix">
+                <div class="des_number">
+                    <div class="reduction">
+                        <a href="#" class="reduction_text">-</a>
+                    </div>
+                    <div class="des_input">
+                        <input type="text" value="1"/>
+                    </div>
+                    <div class="add">
+                        <a href="#" class="add_text">+</a>
+                    </div>
+                </div>
+                <div class="sure">有货</div>
+            </div>
+        </div>
+        <p>￥2899.00</p>
+        <p>删除</p>
+    </div>
+    <div class="cart_list_foot clear-fix">
+        <div class="leftArea fl">
+            <p><a href="#" class="checkbox_h"><input type="checkbox"/>全选</a></p>
+            <p><a href="">删除选中的商品</a></p>
+        </div>
+        <div class="rightArea fr">
+            <p>已选择 <a href="" class="shop_num">1</a> 件商品</p>
+            <p class="total">总价: <i>￥2899</i></p>
+            <a href="#" class="account">去结算</a>
+        </div>
+
+    </div>
+</div>
+<div class="cart_list comWidth">
+    <div class="cart_list_row comWidth">
+        <h3 class="list_title">慕课购物</h3>
+        <div class="list_col active">
+            <p class="">1.购物车</p>
+
+        </div>
+        <div class="list_col sure_list">
+            <p class="active">2.填写核对订单信息</p>
+            <div class="line">
+                <p class="line1"></p>
+            </div>
+        </div>
+        <div class="list_col">
+            <p>3.成功提交订单</p>
+        </div>
+
+    </div>
+    <div class="checkTheOrder">
+        <h3>填写并核对订单信息</h3>
+        <div class="order_box">
+            <div class="checkAddress">
+                <div class="clear-fix">
+                    <p class="leftArea">收货人信息</p>
+                    <p class="rightArea"><a href="#">+ 新增收货地址</a></p>
+                </div>
+                <div class="info_detail">
+                    <p class="name">张三丰</p>
+                    <p class="address">重庆市南岸区学府大道重庆交通大学只园小区1栋3单元</p>
+                    <p class="phone">132****5023</p>
+                    <p class="edit"><a href="#">编辑</a></p>
+                </div>
+                <div class="hr"></div>
+            </div>
+            <div class="pay_way">
+                <p class="pay_title">付款方式</p>
+                <input type="radio" name="i"/>货到付款
+                <input type="radio" name="i"/>在线支付
+                <div class="hr"></div>
+            </div>
+            <div class="freight_list">
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="guess_you comWidth">
+    <div class="products_title">
+        <p class="active">猜你喜欢</p>
+        <p>随手购</p>
+        <p>最近浏览</p>
+    </div>
+    <div class="products_list clear-fix">
+        <div class="item">
+            <div class=" img_item">
+                <img src="img/4.png" alt=""/>
+            </div>
+            <p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
+            <p class="money">￥888</p>
+            <p><a href="#" class="add_cart icon icon-cart">加入购物车</a></p>
+        </div>
+        <div class="item">
+            <div class=" img_item">
+                <img src="img/4.png" alt=""/>
+            </div>
+            <p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
+            <p class="money">￥888</p>
+            <p><a href="#" class="add_cart icon icon-cart">加入购物车</a></p>
+        </div>
+        <div class="item">
+            <div class=" img_item">
+                <img src="img/4.png" alt=""/>
+            </div>
+            <p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
+            <p class="money">￥888</p>
+            <p><a href="#" class="add_cart icon icon-cart">加入购物车</a></p>
+        </div>
+        <div class="item">
+            <div class=" img_item">
+                <img src="img/4.png" alt=""/>
+            </div>
+            <p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
+            <p class="money">￥888</p>
+            <p><a href="#" class="add_cart icon icon-cart">加入购物车</a></p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="footer hide">
+    <p><a href="">某某简介</a><a>丨</a><a href="">某某某某</a><a>丨</a><a href="">啦啦啦啦</a><a>丨</a><a href="">哈哈哈哈</a><a>丨</a><a href="">得得得得</a></p>
+    <p>copyright @ wufei</p>
+    <p><a href=""><img src="" alt=""/></a></p>
+</div>
+</body>
+</html>
