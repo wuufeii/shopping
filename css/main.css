@@ -1,5 +1,6 @@
 @media screen and (max-width: 1024px) {
-    .headBar ,.footer{
+    .headBar ,.footer , .login
+    {
         width: 1024px;
     }
 }
@@ -1567,4 +1568,144 @@
 .order_success{
     text-align: center;
     margin: 30px 0;
+}
+.welcome_login{
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 12px;
+    color: #ffffff;
+    padding-top: 20px;
+}
+.login{
+    height: 475px;
+    background-color: #ececec;
+}
+.loginBox{
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+}
+.login img{
+    width: 990px;
+    height: 475px;
+}
+.loginContent{
+    width: 346px;
+    background-color: #ffffff;
+    float: right;
+    position: absolute;
+    top: 44px;
+    left: 644px;
+}
+.login_title{
+    height: 55px;
+    border-bottom: 1px solid #f4f4f4;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.login_title .col_2{
+    display: inline-block;
+    width: 167px;
+    line-height: 55px;
+    font-size: 18px;
+}
+.login_title .active ,
+.login_title .col_2:hover{
+    color: #e4393c;
+    font-weight: bold;
+}
+.login_title .col_1{
+    display: inline-block;
+    width: 3px;
+}
+.login_title .login_line{
+    width: 3px;
+    height: 18px;
+    line-height: 55px;
+    border-right: 1px solid #f4f4f4;
+}
+.userAndPass{
+    width: 310px;
+    margin: 0 auto;
+}
+.loginContent .password,
+.loginContent .username{
+    width: 308px;
+    height: 40px;
+    border: 1px solid #BBBBBB;
+    line-height: 36px;
+    margin-bottom: 22px;
+}
+.loginContent .user_logo ,
+.loginContent .pass_logo{
+    width: 42px;
+    height: 40px;
+    display: inline-block;
+    font-size: 18px;
+    color: #d4d4d4;
+    background-color: #f3f3f3;
+    text-align: center;
+    border-right: 1px solid #BBBBBB;
+}
+.loginContent .username input,
+.loginContent .password input{
+    width: 255px;
+    font-size: 16px;
+    padding-left: 6px;
+}
+.forget{
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 24px;
+}
+.forget a:hover{
+    color: #e4393c;
+    text-decoration: underline;
+}
+.login_btn{
+    width: 308px;
+    height: 36px;
+    border: 1px solid #cb2a2d;
+    background-color: #e4393c;
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.login_foot{
+    height: 55px;
+    border-top: 1px solid #f4f4f4;
+    text-align: center;
+    margin-top: 32px;
+}
+.login_foot .leftArea div{
+    display: inline-block;
+}
+.login_foot .line{
+    height: 12px;
+    border-right: 2px solid #cfd9eb;
+    margin: 0 8px;
+}
+.login_foot .QQ{
+    margin-left: 20px;
+    line-height: 55px;
+}
+.login_foot .QQ a:hover,
+.login_foot .weiXin a:hover{
+    color: #b61d1d;
+    text-decoration: underline;
+}
+.login_foot  .register a{
+    font-size: 16px;
+    color: #b61d1d;
+    line-height: 55px;
+    margin-right: 20px;
+}
+.login_foot .register a:hover{
+    text-decoration: underline;
+}
+.login_foot .QQ img,
+.login_foot .weiXin img{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
 }

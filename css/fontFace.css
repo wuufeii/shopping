@@ -44,3 +44,9 @@
 .icon-comment:before{
     content: '\e970';
 }
+.icon-user:before{
+    content: '\e971';
+}
+.icon-pass:before{
+    content: '\e98f';
+}
