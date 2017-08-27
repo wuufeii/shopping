@@ -30,8 +30,8 @@
                 <input type="button" value="搜 索" class="search-btn fr"/>
             </div>
             <div class="shopCar cart_shopCart fr">
-                <span class="shopText icon icon-cart">购物车</span>
-                <span class="shopNum icon icon-menu">0</span>
+                <a  href="cart.html" class="shopText icon icon-cart">购物车</a>
+                <a href="cart.html" class="shopNum icon icon-menu">0</a>
             </div>
         </div>
     </div>
@@ -44,7 +44,7 @@
         <a href="#" class="goingShopping">去购物&gt;</a>
     </div>
 </div>
-<div class="cart_list comWidth ">
+<div class="cart_list comWidth">
     <div class="cart_list_row comWidth">
         <h3 class="list_title">慕课购物</h3>
         <div class="list_col">
@@ -112,7 +112,7 @@
 
     </div>
 </div>
-<div class="cart_list comWidth clear-fix hide">
+<div class="cart_list1 comWidth clear-fix hide">
     <div class="cart_list_row comWidth">
         <h3 class="list_title">慕课购物</h3>
         <div class="list_col active">
@@ -182,7 +182,7 @@
     </div>
     <input type="submit" value="提交订单" class="order_submit"/>
 </div>
-<div class="cart_list comWidth hide">
+<div class="cart_list2 comWidth hide">
     <div class="cart_list_row comWidth">
         <h3 class="list_title">慕课购物</h3>
         <div class="list_row">
@@ -251,5 +251,18 @@
     <p>copyright @ wufei</p>
     <p><a href=""><img src="" alt=""/></a></p>
 </div>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(document).ready(function(e) {
+        $(".account").click(function(e) {
+            $(".cart_list").toggle();
+            $(".cart_list1").toggle();
+        });
+        $(".order_submit").click(function(e) {
+            $(".cart_list1").toggle();
+            $(".cart_list2").toggle();
+        });
+    });
+</script>
 </body>
 </html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/fontFace.css"/>
+    <title>注册</title>
+</head>
+<body onload="changeImg()">
+<div class="headBar">
+    <div class="topBar">
+        <div class="comWidth clear-fix">
+            <div class="leftArea">
+                <a href="#" class="collection icon icon-star">收藏慕课</a>
+            </div>
+            <div class="rightArea">
+                欢迎来到慕课网！ 注册页面
+            </div>
+        </div>
+    </div>
+    <div class="logoBar regTop">
+        <div class="comWidth clear-fix">
+            <div class="logo fl">
+                <a href="#"><img src="img/logo.png" alt="慕课网"/></a>
+                <p class="welcome_reg">欢迎注册</p>
+            </div>
+            <div class="have_num fr">
+                <p>已有账号？</p><a href="login.html">请登录</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="reg">
+    <div class="regBox">
+        <div class="username">
+            <input type="text" value="用户名" class="title w3"/>
+            <input type="text" placeholder="您的账号名和登录名" class="input"/>
+        </div>
+        <div class="set_password">
+            <input type="text" value="设置密码" class="title w4"/>
+            <input type="password" placeholder="请输入您的密码" class="input"/>
+        </div>
+        <div class="confirm_password">
+            <input type="text" value="确认密码" class="title w4"/>
+            <input type="password" placeholder="请确认您的密码" class="input"/>
+        </div>
+        <div class="phone">
+            <input type="text" value="手机号" class="title w3"/>
+            <input type="tel" placeholder="建议输入常用手机" class="input"/>
+        </div>
+        <div class="auth_code">
+            <input type="text" value="验证码" class="title w3"/>
+            <input type="text" id="regCode" placeholder="请输入验证码" value="请输入验证码" onfocus="this.value=''" onblur="if(this.value=='')this.value='请输入验证码'"/><span id="code" title="看不清，换一张"></span>
+        </div>
+        <div class="reg_btn">
+            <input type="submit" value=" 立即注册"/>
+        </div>
+
+    </div>
+</div>
+<div class="footer">
+    <p><a href="">某某简介</a><a>丨</a><a href="">某某某某</a><a>丨</a><a href="">啦啦啦啦</a><a>丨</a><a href="">哈哈哈哈</a><a>丨</a><a href="">得得得得</a></p>
+    <p>copyright @ wufei</p>
+    <p><a href=""><img src="" alt=""/></a></p>
+</div>
+<script type="text/javascript">
+    var code;//声明一个变量用于存储生成的验证码
+    document.getElementById("code").onclick=changeImg;
+    function changeImg(){
+        //alert("换图片");
+        var arrays=new Array(
+                '1','2','3','4','5','6','7','8','9','0',
+                'a','b','c','d','e','f','g','h','i','j',
+                'k','l','m','n','o','p','q','r','s','t',
+                'u','v','w','x','y','z',
+                'A','B','C','D','E','F','G','H','I','J',
+                'K','L','M','N','O','P','Q','R','S','T',
+                'U','V','W','X','Y','Z'
+        );
+        code='';//重新初始化验证码
+        //alert(arrays.length);
+        //随机从数组中获取四个元素组成验证码
+        for(var i=0;i<4;i++){
+            //随机获取一个数组的下标
+            var r=parseInt(Math.random()*arrays.length);
+            code+=arrays[r];
+            //alert(arrays[r]);
+        }
+        //alert(code);
+        document.getElementById('code').innerHTML=code;//将验证码写入指定区域
+    }
+
+    //效验验证码(表单被提交时触发)
+    function check(){
+        //获取用户输入的验证码
+        var input_code=document.getElementById('vcode').value;
+        //alert(input_code+"----"+code);
+        if(input_code.toLowerCase()==code.toLowerCase())
+        {
+            //验证码正确(表单提交)
+            return true;
+        }
+        alert("请输入正确的验证码!");
+        //验证码不正确,表单不允许提交
+        return false;
+    }
+</script>
+
+</body>
+</html>

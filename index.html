@@ -15,7 +15,7 @@
                 <a href="#" class="collection icon icon-star">收藏慕课</a>
             </div>
             <div class="rightArea">
-                欢迎来到慕课网！<a href="#">[登录]</a> <a href="#">[免费注册]</a>
+                欢迎来到慕课网！<a href="login.html">[登录]</a> <a href="register.html">[免费注册]</a>
             </div>
         </div>
     </div>
@@ -29,8 +29,8 @@
                 <input type="button" value="搜 索" class="search-btn fr"/>
             </div>
             <div class="shopCar fr">
-                <span class="shopText icon icon-cart">购物车</span>
-                <span class="shopNum icon icon-menu">0</span>
+                <a  href="cart.html" class="shopText icon icon-cart">购物车</a>
+                <a href="cart.html" class="shopNum icon icon-menu">0</a>
             </div>
         </div>
     </div>
@@ -39,19 +39,6 @@
             <div class="shopClass fl">
                 <h3>全部商品分类</h3><i class="icon icon-menu1"></i>
                 <div class="shopClass_show">
-                    <dl class="shopClass_item">
-                        <dt>
-                            <a href="#">手机</a>
-                            <a href="#">数码</a>
-                            <a href="#" class="aLink"> 合约机</a>
-                            <a href="#" class="aList"></a>
-                        </dt>
-                        <dd>
-                            <a href="#">荣耀5X</a>
-                            <a href="#">单反</a>
-                            <a href="#">智能设备</a>
-                        </dd>
-                    </dl>
                     <dl class="shopClass_item shopClass_active">
                         <dt>
                             <a href="#">手机</a>
@@ -91,6 +78,19 @@
                             <a href="#">智能设备</a>
                         </dd>
                     </dl>
+                    <dl class="shopClass_item hide">
+                        <dt>
+                            <a href="#">手机</a>
+                            <a href="#">数码</a>
+                            <a href="#" class="aLink"> 合约机</a>
+                            <a href="#" class="aList"></a>
+                        </dt>
+                        <dd>
+                            <a href="#">荣耀5X</a>
+                            <a href="#">单反</a>
+                            <a href="#">智能设备</a>
+                        </dd>
+                    </dl>
                     <dl class="shopClass_item">
                         <dt>
                             <a href="#">手机</a>
@@ -105,8 +105,7 @@
                         </dd>
                     </dl>
                 </div>
-
-                    <div class="shopClass_list hide">
+                    <div class="shopClass_list">
                         <dl class="shopList_item">
                             <dt>电脑装机</dt>
                             <dd>
@@ -187,7 +186,6 @@
                             <a href="#">硬件/外设频道</a>
                         </div>
                     </div>
-
             </div>
             <ul class="nav fl">
                 <li><a href="#" class="active">数码城</a></li>
@@ -236,7 +234,7 @@
         <div class="shopList_top clear-fix">
             <div class="shop_item fl">
                 <div class="shop_img">
-                    <a href="#" alt=""><img src="img/3.jpg" alt=""/></a>
+                    <a href="productInfo.html" alt=""><img src="img/3.jpg" alt=""/></a>
                 </div>
                 <h3>GTC新渴望8系列</h3>
                 <p>1988元</p>
@@ -398,5 +396,25 @@
     <p>copyright @ wufei</p>
     <p><a href=""><img src="" alt=""/></a></p>
 </div>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(document).ready(function(e) {
+        $(".icon-menu1").click(function(e) {
+            $(".shopClass_show").toggle();
+        });
+        $(".shopClass_show").click(function(e) {
+            $(".shopClass_list").toggle();
+        });
+
+       /* $(".shopClass_item").click(function(e){
+                if( $(".shopClass_item").eq(1).hasClass("shopClass_active")){
+                    $(".shopClass_item").eq(1).removeClass("shopClass_active");
+                }else{
+                    $(".shopClass_item").eq(1).addClass("shopClass_active")
+                }
+
+        });*/
+    });
+</script>
 </body>
 </html>
